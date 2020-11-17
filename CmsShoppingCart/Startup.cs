@@ -26,6 +26,8 @@ namespace CmsShoppingCart
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //add context data as Service
             services.AddDbContext<CmsShoppingCartContext>(options => options.UseSqlServer
            (Configuration.GetConnectionString("CmsShoppingCartContext")));
         }
