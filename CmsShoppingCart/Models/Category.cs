@@ -12,7 +12,6 @@ namespace CmsShoppingCart.Models
         [Required, MinLength(2, ErrorMessage ="Minimum lenghth is 2")]
         [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Only letters are allowed")]
         public string Name { get; set; }
-        [Required]
         public string Slug { get; set; }
 
         public int Sorting { get; set; }
